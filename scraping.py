@@ -141,11 +141,11 @@ def hemi_img_titles(browser):
 
     # 3. Write code to retrieve the image urls and titles for each hemisphere.
     # creating a list to hold titles
-    hemi_titles = []
+
 
     # getting all 4 titles for all 4 hemispheres
     hemi_orig_titles = hemi_soup1.find_all('h3')
-    print(hemi_orig_titles)
+    # print(hemi_orig_titles)
 
     try:
         # 3. Write code to retrieve the image urls and titles for each hemisphere.
@@ -191,7 +191,7 @@ def hemi_img_titles(browser):
             # hemisphere_image_urls
 
             # 5. Quit the browser
-            browser.quit()
+            # browser.quit()
 
     except AttributeError:
         return None
